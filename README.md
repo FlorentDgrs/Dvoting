@@ -1,62 +1,78 @@
-# Voting DApp Monorepo
+# Dvoting
 
-This repository contains both the frontend and backend for a decentralized voting application.
+**Dvoting** is a modern decentralized voting dApp — fast, transparent, and trustless. Built for the future of collective decision-making, powered by Ethereum.
 
-- **Frontend:** Next.js app (TypeScript, Wagmi, RainbowKit) — deployed on Vercel
-- **Backend:** Solidity smart contract + Hardhat environment — deployed on Sepolia testnet
+- **Frontend:** Next.js, Wagmi, RainbowKit — deployed on Vercel
+- **Smart Contract:** Solidity, Hardhat — deployed on Sepolia
 
 ---
 
-## Repository Structure
+## 🚀 What is Dvoting?
+
+Dvoting lets anyone run a secure, on-chain voting session. No middlemen, no hidden results — just pure, verifiable democracy. Connect your wallet, register, propose, vote. Results are public and tamper-proof.
+
+---
+
+## 🛠️ How it Works
+
+- **Smart contract** on Sepolia manages all voting logic and data
+- **Frontend** talks directly to the blockchain (no backend server)
+- **You own your vote** — all actions are signed and transparent
+
+---
+
+## ⚡ Quick Start
+
+1. **Clone this repo**
+2. `cd frontend && npm install` — get the UI running
+3. `cd backend && npm install` — for contract devs
+4. Deploy the contract to Sepolia (see backend README)
+5. Update the contract address in the frontend
+6. Deploy the frontend to Vercel
+
+---
+
+## 🌐 Live Architecture
+
+- **Frontend:** Vercel (Next.js app)
+- **Smart Contract:** Sepolia testnet
+- **Wallets:** Metamask, WalletConnect, etc.
+
+---
+
+## 📁 Project Structure (Full Tree)
 
 ```
-/               # Monorepo root
-├── frontend/   # Next.js frontend (UI, wallet integration)
-├── backend/    # Smart contract, tests, deployment scripts
-└── README.md   # (this file)
+Dvoting/
+├── frontend/                # Next.js dApp (UI, wallet integration)
+│   ├── app/
+│   ├── components/
+│   ├── public/
+│   ├── wagmi/
+│   ├── package.json
+│   └── ...
+├── backend/                 # Solidity contract, tests, deployment
+│   ├── contracts/
+│   │   └── Voting.sol
+│   ├── test/
+│   │   └── voting.t.ts
+│   ├── ignition/
+│   │   └── modules/
+│   │       └── Voting.ts
+│   ├── hardhat.config.ts
+│   ├── package.json
+│   └── ...
+├── README.md                # (this file)
+└── ...
 ```
 
-- See [`frontend/README.md`](./frontend/README.md) for frontend details
-- See [`backend/README.md`](./backend/README.md) for smart contract details
-
 ---
 
-## Development Workflow
+## 📚 More Info
 
-1. **Smart Contract (Backend):**
-
-   - Develop and test the contract in `/backend`
-   - Deploy the contract to Sepolia using Hardhat
-   - Note the deployed contract address for frontend integration
-
-2. **Frontend:**
-
-   - Build the user interface in `/frontend`
-   - Configure the contract address and network (Sepolia)
-   - Interact with the deployed contract via Wagmi/RainbowKit
-
-3. **Deployment:**
-   - **Frontend:** Deploy `/frontend` to Vercel (connect this repo, set root to `frontend/`)
-   - **Backend:** The smart contract is already live on Sepolia; no backend code is deployed to Vercel
+- [Frontend README](./frontend/README.md)
+- [Backend README](./backend/README.md)
 
 ---
-
-## How It Works
-
-- The frontend communicates directly with the smart contract on Sepolia via the user's wallet (Metamask, WalletConnect, etc.)
-- No traditional backend server is required
-- All voting logic and data are managed on-chain
-
----
-
-## Quick Start
-
-- See each subdirectory's README for setup and usage instructions
-- Make sure to update the contract address in the frontend after each deployment
-
----
-
-## License
 
 MIT
-# Dvoting
