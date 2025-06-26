@@ -11,7 +11,7 @@ import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
 
 const config = getDefaultConfig({
   appName: "My Voting dApp",
-  projectId: "1d6h0bkc3occrd32",
+  projectId: "79baaa61aacc8a01e2d6f0fb66c30898",
   chains: [sepolia],
   ssr: true, // If your dApp uses server side rendering (SSR)
 });
