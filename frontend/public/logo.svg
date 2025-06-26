@@ -1,0 +1,5 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="128" height="128" rx="32" fill="#4F46E5"/>
+  <text x="50%" y="54%" text-anchor="middle" fill="white" font-size="64" font-family="Arial, sans-serif" dy=".35em" font-weight="bold">D</text>
+  <polyline points="44,80 60,96 88,64" fill="none" stroke="#FFD600" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
