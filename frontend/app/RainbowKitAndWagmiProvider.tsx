@@ -4,7 +4,6 @@ import {
   getDefaultConfig,
   RainbowKitProvider,
   darkTheme,
-  Locale,
 } from "@rainbow-me/rainbowkit";
 import { WagmiProvider } from "wagmi";
 import { sepolia } from "wagmi/chains";
