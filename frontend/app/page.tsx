@@ -75,20 +75,22 @@ const phaseDescriptions: Record<number, Record<string, string>> = {
     visitor: "Voter registration is in progress.",
   },
   1: {
-    owner: "You can start or end the proposal registration phase.",
+    owner:
+      "Proposal registration is open! You can review proposals as they come in, and end the phase when ready. Only voters can submit proposals.",
     voter: "You can submit a proposal for this voting session.",
-    visitor: "Proposal registration is in progress.",
+    visitor:
+      "Proposal registration allow registred voters to submit proposals.",
   },
   2: {
     owner: "You can start the voting session.",
     voter:
       "Proposal registration has ended. Please wait for the voting session to start.",
-    visitor: "Proposal registration has ended.",
+    visitor: "Proposal registration is complete.",
   },
   3: {
     owner: "Voting session is active. You can monitor the votes.",
     voter: "You can vote for your favorite proposal.",
-    visitor: "Voting session is active.",
+    visitor: "Voting session allow registered voters to vote.",
   },
   4: {
     owner: "You can tally the votes to see the results.",
