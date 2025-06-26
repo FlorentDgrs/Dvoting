@@ -4,6 +4,7 @@ import {
   getDefaultConfig,
   RainbowKitProvider,
   darkTheme,
+  Locale,
 } from "@rainbow-me/rainbowkit";
 import { WagmiProvider } from "wagmi";
 import { sepolia } from "wagmi/chains";
@@ -34,6 +35,7 @@ const RainbowKitAndWagmiProvider = ({
             fontStack: "system",
             overlayBlur: "small",
           })}
+          locale="en-US"
         >
           {children}
         </RainbowKitProvider>

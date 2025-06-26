@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import RainbowKitAndWagmiProvider from "./RainbowKitAndWagmiProvider";
+import RainbowKitAndWagmiProvider from "@/app/RainbowKitAndWagmiProvider";
 import Layout from "../components/shared/Layout";
 import { Toaster } from "sonner";
 

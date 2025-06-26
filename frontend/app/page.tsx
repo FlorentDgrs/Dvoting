@@ -21,6 +21,7 @@ import { Badge } from "@/components/ui/badge";
 import VoterList from "@/components/shared/VoterList";
 import { getFriendlyErrorMessage } from "@/lib/utils";
 import ResetVotingPanel from "@/components/shared/ResetVotingPanel";
+import NotConnectedInfo from "@/components/shared/NotConnectedInfo";
 
 const workflowSteps = [
   {
@@ -292,7 +293,7 @@ export default function Home() {
   if (!isConnected) {
     return (
       <div className="max-w-xl mx-auto mt-10 text-center text-muted-foreground">
-        Please connect your wallet to access the voting app.
+        <NotConnectedInfo />
       </div>
     );
   }
